@@ -1,52 +1,46 @@
-# Happiness-E-Library-Dummy-Data
-Deskripsi Proyek
-Proyek ini bertujuan untuk menciptakan dataset dummy yang realistis untuk aplikasi e-library Happiness. Dataset ini mencakup data untuk beberapa tabel utama seperti libraries, books, users, loans, dan holds. Data dibuat menggunakan Python dengan bantuan library Faker untuk menghasilkan data palsu yang mirip dengan kondisi nyata.
+# Happiness E-Library Dummy Data
 
-Struktur Direktori
-diff
-Copy code
-- libraries.csv
-- books.csv
-- users.csv
-- loans.csv
-- holds.csv
-- README.md
-Struktur Data
-Setiap file CSV memiliki struktur kolom sebagai berikut:
+Repository ini berisi dataset dummy untuk proyek Happiness E-Library. Dataset ini dibuat untuk mensimulasikan sistem manajemen perpustakaan yang meliputi data perpustakaan, buku, pengguna, peminjaman, dan reservasi (hold).
 
-libraries.csv
-library_id: ID unik untuk setiap perpustakaan.
-name: Nama perpustakaan.
-address: Alamat perpustakaan.
-established_date: Tanggal pendirian perpustakaan.
-books.csv
-book_id: ID unik untuk setiap buku.
-library_id: ID perpustakaan tempat buku tersebut tersedia.
-title: Judul buku.
-author: Penulis buku.
-genre: Genre atau kategori buku.
-publisher: Penerbit buku.
-publication_date: Tanggal publikasi buku.
-language: Bahasa buku.
-isbn: Nomor ISBN buku.
-quantity: Jumlah salinan buku yang tersedia.
-users.csv
-user_id: ID unik untuk setiap pengguna.
-username: Nama pengguna.
-email: Alamat email pengguna.
-password: Kata sandi pengguna.
-registration_date: Tanggal registrasi pengguna.
-loans.csv
-loan_id: ID unik untuk setiap transaksi peminjaman.
-book_id: ID buku yang dipinjam.
-user_id: ID pengguna yang melakukan peminjaman.
-loan_date: Tanggal peminjaman buku.
-due_date: Tanggal jatuh tempo pengembalian buku.
-return_date: Tanggal pengembalian buku (jika sudah dikembalikan).
-holds.csv
-hold_id: ID unik untuk setiap reservasi buku.
-book_id: ID buku yang di-reservasi.
-user_id: ID pengguna yang melakukan reservasi.
-hold_date: Tanggal reservasi buku.
-expiry_date: Tanggal kadaluarsa reservasi.
-status: Status reservasi (aktif, dilepas, dipinjam).
+## Files
+
+- `libraries.csv`: Dataset mengenai informasi perpustakaan, termasuk nama, alamat, dan tanggal pendirian.
+- `books.csv`: Dataset mengenai informasi buku, seperti judul, pengarang, genre, penerbit, tanggal publikasi, bahasa, ISBN, dan jumlah ketersediaan.
+- `users.csv`: Dataset mengenai pengguna perpustakaan, termasuk username, email, password, dan tanggal registrasi.
+- `loans.csv`: Dataset mengenai transaksi peminjaman buku, mencakup tanggal peminjaman, tanggal jatuh tempo, dan tanggal pengembalian (jika sudah dikembalikan).
+- `holds.csv`: Dataset mengenai data reservasi buku, termasuk tanggal reservasi, tanggal kedaluwarsa, dan status reservasi.
+
+## How to Use
+
+Anda dapat menggunakan dataset ini untuk mengimpor data ke dalam basis data PostgreSQL atau sistem basis data lainnya. Berikut adalah langkah-langkah umum untuk menggunakan dataset ini:
+
+1. Unduh atau clone repositori ini ke komputer lokal Anda.
+2. Buka setiap file CSV untuk melihat struktur data dan pastikan sesuai dengan kebutuhan proyek Anda.
+3. Import data CSV ke dalam sistem basis data Anda menggunakan perintah `COPY` pada PostgreSQL atau fungsi impor yang sesuai pada sistem basis data lainnya.
+
+## Example Usage
+
+Berikut adalah contoh penggunaan dasar untuk mengimpor data CSV ke dalam PostgreSQL:
+
+1. Buka terminal atau command prompt.
+2. Masuk ke dalam direktori tempat Anda menyimpan file CSV dari repositori ini.
+3. Jalankan perintah berikut untuk mengimpor data `libraries.csv` ke dalam tabel `libraries` pada database PostgreSQL:
+
+
+Gantilah `path/to/libraries.csv` dengan path sesuai lokasi file `libraries.csv` di komputer Anda.
+
+4. Ulangi langkah di atas untuk mengimpor data dari file CSV lainnya (`books.csv`, `users.csv`, `loans.csv`, `holds.csv`) sesuai dengan tabel yang sesuai dalam database Anda.
+
+## License
+
+Tidak ada lisensi khusus yang didefinisikan untuk dataset ini. Anda bebas menggunakan, mengubah, dan mendistribusikan dataset ini sesuai kebutuhan proyek Anda.
+
+## Contributors
+
+- Goldina Raina Putri
+
+Jika Anda memiliki pertanyaan lebih lanjut atau masukan terkait dataset ini, jangan ragu untuk menghubungi saya melalui email atau melalui GitHub.
+
+Terima kasih!
+
+
