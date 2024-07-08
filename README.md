@@ -12,35 +12,24 @@ Repository ini berisi dataset dummy untuk proyek Happiness E-Library. Dataset in
 
 ## How to Use
 
-Anda dapat menggunakan dataset ini untuk mengimpor data ke dalam basis data PostgreSQL atau sistem basis data lainnya. Berikut adalah langkah-langkah umum untuk menggunakan dataset ini:
+ dapat menggunakan dataset ini untuk mengimpor data ke dalam basis data PostgreSQL atau sistem basis data lainnya. Berikut adalah langkah-langkah umum untuk menggunakan dataset ini:
 
-1. Unduh atau clone repositori ini ke komputer lokal Anda.
-2. Buka setiap file CSV untuk melihat struktur data dan pastikan sesuai dengan kebutuhan proyek Anda.
-3. Import data CSV ke dalam sistem basis data Anda menggunakan perintah `COPY` pada PostgreSQL atau fungsi impor yang sesuai pada sistem basis data lainnya.
+1. Unduh atau clone repositori ini ke komputer lokal .
+2. Buka setiap file CSV untuk melihat struktur data dan pastikan sesuai dengan kebutuhan proyek .
+3. Import data CSV ke dalam sistem basis data  menggunakan perintah `COPY` pada PostgreSQL atau fungsi impor yang sesuai pada sistem basis data lainnya.
 
 ## Example Usage
 
 Berikut adalah contoh penggunaan dasar untuk mengimpor data CSV ke dalam PostgreSQL:
 
 1. Buka terminal atau command prompt.
-2. Masuk ke dalam direktori tempat Anda menyimpan file CSV dari repositori ini.
+2. Masuk ke dalam direktori tempat  menyimpan file CSV dari repositori ini.
 3. Jalankan perintah berikut untuk mengimpor data `libraries.csv` ke dalam tabel `libraries` pada database PostgreSQL:
 
 
-Gantilah `path/to/libraries.csv` dengan path sesuai lokasi file `libraries.csv` di komputer Anda.
+Gantilah `path/to/libraries.csv` dengan path sesuai lokasi file `libraries.csv` di komputer.
 
-4. Ulangi langkah di atas untuk mengimpor data dari file CSV lainnya (`books.csv`, `users.csv`, `loans.csv`, `holds.csv`) sesuai dengan tabel yang sesuai dalam database Anda.
+4. Ulangi langkah di atas untuk mengimpor data dari file CSV lainnya (`books.csv`, `users.csv`, `loans.csv`, `holds.csv`) sesuai dengan tabel yang sesuai dalam database.
 
-## License
-
-Tidak ada lisensi khusus yang didefinisikan untuk dataset ini. Anda bebas menggunakan, mengubah, dan mendistribusikan dataset ini sesuai kebutuhan proyek Anda.
-
-## Contributors
-
-- Goldina Raina Putri
-
-Jika Anda memiliki pertanyaan lebih lanjut atau masukan terkait dataset ini, jangan ragu untuk menghubungi saya melalui email atau melalui GitHub.
-
-Terima kasih!
 
 
